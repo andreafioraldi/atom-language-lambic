@@ -1,0 +1,74 @@
+'scopeName': 'source.lambic'
+'name': 'Lambic'
+'fileTypes': ['lambic']
+
+'patterns': [
+    {
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'name': 'constant.numeric.lambic'
+    }
+    {
+        'match': '\\b(null|true|false)\\b'
+        'name': 'constant.language.lambic'
+    }
+    {
+        'match': '\\b(break|continue|do|else|for|goto|if|ret|while|native)\\b'
+        'name': 'keyword.control.lambic'
+    }
+    {
+        'match': '\\b(sys_uchar|sys_ushort|sys_uint|sys_ulong|sys_ulonglong|sys_char|sys_short|sys_int|sys_long|sys_longlong|sys_float|sys_double|sys_longdouble)\\b'
+        'name': 'support.type.sys-types.lambic'
+    }
+    {
+        'match': '\\b(uchar|ushort|uint|ulong|char|short|int|long|float|double)\\b'
+        'name': 'support.type.types.lambic'
+    }
+    {
+        'match': '\\b(redef)\\s+(\\w+::)?(\\w+)\\**\\s+(\\w+)'
+        'captures':
+            '1':
+                'name': 'keyword.control.lambic'
+            '3':
+                'name': 'support.type.types.lambic'
+            '4':
+                'name': 'support.type.types.lambic'
+        'name': 'meta.declaration.lambic'
+    }
+    {
+        'match': '\\b(def)\\s+(\\w+)\\s*\\(.*\\)'
+        'captures':
+            '1':
+                'name': 'keyword.control.lambic'
+            '2':
+                'name': 'entity.name.function.lambic'
+        'name': 'meta.function.lambic'
+    }
+    {
+        'match': '\\b(def)\\s+(\\w+)'
+        'captures':
+            '1':
+                'name': 'keyword.control.lambic'
+            '2':
+                'name': 'support.type.types.lambic'
+        'name': 'meta.declaration.lambic'
+    }
+    {
+        'match': '\\b(import)\\s+(\\w+)'
+        'captures':
+            '1':
+                'name': 'keyword.control.lambic'
+            '2':
+                'name': 'entity.name.import.lambic'
+        'name': 'meta.import.lambic'
+    }
+    {
+        'begin': '\''
+        'end': '\''
+        'name': 'string.quoted.single.lambic'
+    }
+    {
+        'begin': '\"'
+        'end': '\"'
+        'name': 'string.quoted.double.lambic'
+    }
+]

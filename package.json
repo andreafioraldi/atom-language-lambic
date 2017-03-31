@@ -1,0 +1,18 @@
+{
+  "name": "language-lambic",
+  "version": "0.0.0",
+  "description": "Lambic language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreafioraldi/atom-language-lambic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreafioraldi/atom-language-lambic/issues"
+  },
+  "license": "MIT"
+}
+
